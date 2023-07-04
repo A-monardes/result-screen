@@ -1,0 +1,161 @@
+@import url('https://fonts.googleapis.com/css2?family=Hanken+Grotesk:wght@500;700;900&display=swap');
+@import 'colorresults';
+@import 'bootstrap/bootstrap.scss';
+
+main {
+    font-family: $font;
+}
+
+.primaryred {
+    color: $primaryred;
+}
+.primaryyellow {
+    color: $primaryyellow;
+}
+.primarygreen {
+    color: $primarygreen;
+}
+.primaryblue {
+    color: $primaryblue;
+}
+
+.screen1 {
+    background: rgb(120,87,255);
+    background: linear-gradient(180deg, rgba(120,87,255,1) 0%, rgba(46,43,233,1) 100%);
+    border-radius: 30px;
+}
+
+.result {
+    background: rgb(78,33,202);
+    background: linear-gradient(180deg, rgba(78,33,202,1) 0%, rgba(36,33,202,0.03) 100%);
+    width: 180px;
+    height: 180px;
+}
+
+.btn {
+    background: hsl(224, 30%, 27%);
+}
+
+.btn:hover {
+    background: rgb(120,87,255);
+    background: linear-gradient(180deg, rgba(120,87,255,1) 0%, rgba(46,43,233,1) 100%);
+}
+
+
+.paleblue {
+    color: hsl(221, 100%, 96%);
+}
+
+.p-great {
+    width: 65%;
+}
+
+.light {
+    color: hsl(241, 100%, 89%, 0.5);
+}
+
+.sum {
+    color: $neutralgray;
+    padding-right: 9px;
+    font-weight: 600;
+}
+
+.hundred {
+    color: hsl(224, 30%, 27%, 0.6);
+}
+
+h3 {
+    font-size: 20px;
+}
+
+
+@include media-breakpoint-down(sm) {
+        .row {
+          display: block;
+        }
+      }
+h1 {
+    font-family: $font;
+    font-weight: 600 !important;
+    font-size: 65px !important;
+    }
+
+.container {
+    margin: auto;
+    max-width: 760px;
+}
+
+.bg-red {
+    background-color: hsl(0, 100%, 67%, 0.1);
+    border-radius: 10px;
+    margin-bottom: -2px;
+}
+.bg-yellow {
+    background-color: hsl(39, 100%, 59%, 0.1);
+    border-radius: 10px;
+    margin-bottom: -2px;
+}
+.bg-green {
+    background-color: hsl(166, 100%, 37%, 0.1);
+    border-radius: 10px;
+    margin-bottom: -2px;
+}
+.bg-blue {
+    background-color: hsl(234, 85%, 45%, 0.1);
+    border-radius: 10px;
+}
+
+.screen2 {
+    margin-left: -15px;
+    border-radius: 30px;
+    box-shadow: 30px 30px 40px 0px rgb(0, 0, 0, 0.05);
+    padding-left: 40px;
+    padding-right: 40px;
+}
+
+.btn {
+    border-radius: 30px;
+    height: 60px;
+    margin-bottom: 20px;
+    line-height: 45px;
+}
+
+@media (max-width: 767px) {
+
+    .result {
+      width: 140px;
+      height: 225px;
+      margin-bottom: 20px;
+      margin-top: 20px;
+    }
+
+    .sum {
+        margin-bottom: 30px !important;
+    }
+
+    .p-3 {
+        margin-bottom: 18px;
+    }
+    
+    .bg-blue {
+        margin-bottom: 30px;
+    }
+
+    .screen1 {
+        margin: -12px;
+        margin-top: -80px;
+        border-top-left-radius: 0px;
+        border-top-right-radius: 0px;
+    }
+  }
+  @media (max-width: 575px) {
+    .result {
+        height: 140px;
+        width: 140px;
+    }
+  }
+  @media (max-width: 300px) {
+    .mx-2 {
+        display: none;
+    }
+  }
