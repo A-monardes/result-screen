@@ -153,9 +153,13 @@ h1 {
         height: 140px;
         width: 140px;
     }
+      
   }
   @media (max-width: 300px) {
     .mx-2 {
         display: none;
+    }
+      .p-3{
+        min-width: 135px;
     }
   }
